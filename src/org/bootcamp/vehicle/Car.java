@@ -1,11 +1,9 @@
-package org.bootcamp;
-
-import org.bootcamp.Vehicle;
+package org.bootcamp.vehicle;
 
 /**
  * Created by Carla on 18.04.2018.
  */
-public final class Car extends Vehicle {  //final pentru ca clasa org.bootcamp.Car sa nu mai poata fi mostenita
+public final class Car extends Vehicle {  //final pentru ca clasa org.bootcamp.vehicle.Car sa nu mai poata fi mostenita
     private String transmission = "manual";
 
     public Car(){

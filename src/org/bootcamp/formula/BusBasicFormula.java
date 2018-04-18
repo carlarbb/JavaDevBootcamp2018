@@ -1,4 +1,6 @@
-package org.bootcamp;
+package org.bootcamp.formula;
+
+import org.bootcamp.vehicle.Vehicle;
 
 /**
  * Created by Carla on 18.04.2018.
