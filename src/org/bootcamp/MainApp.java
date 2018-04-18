@@ -9,14 +9,18 @@ public class MainApp {
 
     public static void main(String[] args) {
         //final pentru a nu putea modifica referinta
-        final Car joesCar = new Car(5,2000,true,"auto");
-        final Bus stevesBus = new Bus(3,100000,true,31);
-        final Tipper petersTipper= new Tipper(6, 80000,false,15);
+        final Vehicle joesCar = new Car(5,2000,true,"auto");
+        final Vehicle stevesBus = new Bus(3,100000,true,31);
+        final Vehicle petersTipper= new Tipper(6, 80000,false,15);
+
+        final Formula carBasicFormula= new CarBasicFormula();
+        final Formula busBasicFormula= new BusBasicFormula();
+        final Formula tipperBasicFormula= new TipperBasicFormula();
 
         final InsurancePolicyCalculator calculator= InsurancePolicyCalculator.INSTANCE;
-        final int joesInsurancePolicyCost = calculator.calculate(joesCar);
-        final int stevesInsurancePolicyCost = calculator.calculate(stevesBus);
-        final int petersInsurancePolicyCost = calculator.calculate(petersTipper);
+        final int joesInsurancePolicyCost = calculator.calculate(joesCar, carBasicFormula);
+        final int stevesInsurancePolicyCost = calculator.calculate(stevesBus, busBasicFormula);
+        final int petersInsurancePolicyCost = calculator.calculate(petersTipper,tipperBasicFormula);
 
 
       //folosire operatori ternari in loc de if
