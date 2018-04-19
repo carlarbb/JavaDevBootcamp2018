@@ -1,6 +1,6 @@
 package org.bootcamp.calculator;
 
-import org.bootcamp.formula.Formula;
+import org.bootcamp.Pachet1.Formula;
 import org.bootcamp.vehicle.Vehicle;
 
 /**
