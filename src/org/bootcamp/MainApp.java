@@ -7,10 +7,7 @@ package org.bootcamp;
 //nu exista Segmentation Fault
 
 import org.bootcamp.calculator.InsurancePolicyCalculator;
-import org.bootcamp.formula.BusBasicFormula;
-import org.bootcamp.formula.CarBasicFormula;
 import org.bootcamp.formula.Formula;
-import org.bootcamp.formula.TipperBasicFormula;
 import org.bootcamp.vehicle.Vehicle;
 
 public class MainApp {
@@ -31,9 +28,9 @@ public class MainApp {
         final int petersInsurancePolicyCost = calculator.calculate(petersTipper,tipperBasicFormula);
 */
         final InsurancePolicyCalculator calculator= InsurancePolicyCalculator.INSTANCE;
-        final int joesInsurancePolicyCost = calculator.calculate(joesCar, org.bootcamp.Pachet1.Formula.CARBASICFORMULA);
-        final int stevesInsurancePolicyCost = calculator.calculate(stevesBus, org.bootcamp.Pachet1.Formula.BUSBASICFORMULA);
-        final int petersInsurancePolicyCost = calculator.calculate(petersTipper, org.bootcamp.Pachet1.Formula.TIPPERBASICFORMULA);
+        final int joesInsurancePolicyCost = calculator.calculate(joesCar, Formula.CARBASICFORMULA);
+        final int stevesInsurancePolicyCost = calculator.calculate(stevesBus, Formula.BUSBASICFORMULA);
+        final int petersInsurancePolicyCost = calculator.calculate(petersTipper, Formula.TIPPERBASICFORMULA);
 
       //folosire operatori ternari in loc de if
 
