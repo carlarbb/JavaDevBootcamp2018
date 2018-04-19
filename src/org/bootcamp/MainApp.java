@@ -32,30 +32,6 @@ public class MainApp {
     private static final int VEHICLE_IS_DIESEL = 5;
 
     public static void main(String[] args) {
-       /* //final pentru a nu putea modifica referinta
-        final Vehicle joesCar = new org.bootcamp.vehicle.Car(5,2000,true,"auto");
-        final Vehicle stevesBus = new org.bootcamp.vehicle.Bus(3,100000,true,31);
-        final Vehicle petersTipper= new org.bootcamp.vehicle.Tipper(6, 80000,false,15);
-
-       *//* final Formula carBasicFormula= new CarBasicFormula();
-        final Formula busBasicFormula= new BusBasicFormula();
-        final Formula tipperBasicFormula= new TipperBasicFormula();
-
-        final InsurancePolicyCalculator calculator= InsurancePolicyCalculator.INSTANCE;
-        final int joesInsurancePolicyCost = calculator.calculate(joesCar, carBasicFormula);
-        final int stevesInsurancePolicyCost = calculator.calculate(stevesBus, busBasicFormula);
-        final int petersInsurancePolicyCost = calculator.calculate(petersTipper,tipperBasicFormula);
-        *//*
-        final InsurancePolicyCalculator calculator= InsurancePolicyCalculator.INSTANCE;
-        final int joesInsurancePolicyCost = calculator.calculate(joesCar, Formula.CAR_BASIC_FORMULA);
-        final int stevesInsurancePolicyCost = calculator.calculate(stevesBus, Formula.BUS_BASIC_FORMULA);
-        final int petersInsurancePolicyCost = calculator.calculate(petersTipper, Formula.TIPPER_BASIC_FORMULA);
-
-      //folosire operatori ternari in loc de if
-
-        System.out.println("Joe's policy cost is: "+ joesInsurancePolicyCost);
-        System.out.println("Steve's policy cost is: "+ stevesInsurancePolicyCost);
-        System.out.println("Peter's policy cost is: "+ petersInsurancePolicyCost);*/
 
         final InsurancePolicyCalculator calculator =InsurancePolicyCalculator.INSTANCE;
         if(args.length >=1){
@@ -91,15 +67,6 @@ public class MainApp {
             System.out.println("No arguments!");
         }
     }
-   /* private static Vehicle getVehicle(String vehicleName, int age, long numberOfMiles, boolean isDiesel){
-        Vehicle vehicle;
-        switch(vehicleName){
-            case "CAR": vehicle = new Car(age,numberOfMiles, isDiesel),
-            case "BUS": vehicle = new Bus(age,numberOfMiles, isDiesel),
-            case "Tipper": vehicle = new Tipper(age,numberOfMiles, isDiesel);
-        }
-    }
-    */
    private static Vehicle getVehicle(String vehicleName, int age, long numberOfMiles, boolean isDiesel){
        final String carClassName= Car.class.getSimpleName().toUpperCase();
        final String busClassName= Bus.class.getSimpleName().toUpperCase();
