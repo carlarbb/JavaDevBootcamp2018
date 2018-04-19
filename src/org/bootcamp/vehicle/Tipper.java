@@ -9,9 +9,14 @@ public class Tipper extends Vehicle {
     public Tipper(){
 
     }
+
     public Tipper(int age, long numberOfMiles, boolean isDiesel, int capacityInTons) {
         super(age,numberOfMiles,isDiesel);
         this.capacityInTons = capacityInTons;
+    }
+
+    public Tipper(int age, long numberOfMiles, boolean isDiesel) {
+        super(age, numberOfMiles, isDiesel);
     }
 
     public int getCapacityInTons() {

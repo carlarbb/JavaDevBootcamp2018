@@ -8,7 +8,7 @@ public enum Formula {
         /**
          * Created by Carla on 19.04.2018.
          */
-        CARBASICFORMULA {
+        CAR_BASIC_FORMULA {
             @Override
             public int calculate(Vehicle vehicle) {
                 int cost = 100 * vehicle.getAge();
@@ -22,7 +22,7 @@ public enum Formula {
             }
         },
 
-            BUSBASICFORMULA{
+            BUS_BASIC_FORMULA{
                 @Override
                 public int calculate(Vehicle vehicle) {
                     int cost= 200 * vehicle.getAge();
@@ -32,7 +32,7 @@ public enum Formula {
                 }
             },
 
-            TIPPERBASICFORMULA{
+            TIPPER_BASIC_FORMULA{
                 @Override
                 public int calculate(Vehicle vehicle) {
                     int cost=300 * vehicle.getAge();

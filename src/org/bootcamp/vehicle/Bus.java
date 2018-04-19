@@ -15,6 +15,10 @@ public class Bus extends Vehicle {
         this.numberOfSeats = numberOfSeats;
     }
 
+    public Bus(int age, long numberOfMiles, boolean isDiesel) {
+        super(age, numberOfMiles, isDiesel);
+    }
+
     public int getNumberOfSeats() {
         return numberOfSeats;
     }

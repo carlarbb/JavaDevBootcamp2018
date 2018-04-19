@@ -15,6 +15,10 @@ public final class Car extends Vehicle {  //final pentru ca clasa org.bootcamp.v
         this.transmission = transmission;
     }
 
+    public Car(int age, long numberOfMiles, boolean isDiesel) {
+        super(age, numberOfMiles, isDiesel);
+    }
+
     public String getTransmission() {
         return transmission;
     }
